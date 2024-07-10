@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="header">Cash Calculator</h1>
+
+        <div class="row">
+            <img src="img/20.png" alt="20 pesos">
+            <input 
+                type="number"
+                id="et20"
+                class="cash-input"
+                placeholder="Enter NO. of 20 notes"
+            >
+            <span id="txt20" class="cash-text">0</span>
+        </div>
+        <div class="row">
+            <img src="img/50.png" alt="50 pesos">
+            <input 
+                type="number"
+                id="et50"
+                class="cash-input"
+                placeholder="Enter NO. of 50 notes"
+            >
+            <span id="txt50" class="cash-text">0</span>
+        </div>
+        <div class="row">
+            <img src="img/100.png" alt="100 pesos">
+            <input 
+                type="number"
+                id="et100"
+                class="cash-input"
+                placeholder="Enter NO. of 100 notes"
+            >
+            <span id="txt100" class="cash-text">0</span>
+        </div>
+        <div class="row">
+            <img src="img/200.png" alt="200 pesos">
+            <input 
+                type="number"
+                id="et200"
+                class="cash-input"
+                placeholder="Enter NO. of 200 notes"
+            >
+            <span id="txt200" class="cash-text">0</span>
+        </div>
+        <div class="row">
+            <img src="img/500.png" alt="500 pesos">
+            <input 
+                type="number"
+                id="et500"
+                class="cash-input"
+                placeholder="Enter NO. of 500 notes"
+            >
+            <span id="txt500" class="cash-text">0</span>
+        </div>
+        <div class="row">
+            <img src="img/1000.png" alt="1000 pesos">
+            <input 
+                type="number"
+                id="et1000"
+                class="cash-input"
+                placeholder="Enter NO. of 1000 notes"
+            >
+            <span id="txt1000" class="cash-text">0</span>
+        </div>
+
+        <div class="row">
+            <button id="btnReset">Reset</button>
+        </div>
+        <div class="row result-part">
+            <span id="txtFinalCash">Total Cash: 0</span>
+            <span id="txtFinalCashInWords">Zero</span>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
