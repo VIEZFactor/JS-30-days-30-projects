@@ -41,7 +41,24 @@ document.addEventListener("DOMContentLoaded", () => {
             totalCashValue += parseInt(text.textContent);
         })
 
-        txtFinalCash.textContent = `Total Cash: ${totalCashValue}`;
+        txtFinalCash.textContent = `Total Cash: $${totalCashValue}`;
     }
-    
+
+    btnReset.addEventListener("click", clearData);
+
+    function clearData(){
+        cashInputs.forEach((input) => input.value = "");
+        cashTexts.forEach((text) => text.textContent = "0");
+        totalCash();
+    }
+
+    cashInputs.forEach((input) => {
+        input.addEventListener("input", () => {
+            const value = parseInt(input.value, 10);
+            console.log(value);
+            if(isNaN(value) || value < 0){
+                input.value = "";
+            }
+        })
+    })
 });
